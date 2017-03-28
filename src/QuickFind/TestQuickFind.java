@@ -6,7 +6,7 @@ import org.junit.Test;
 import junit.framework.TestCase;
 public class TestQuickFind extends TestCase {
 	
-	private QuickFind qf;
+	private DynamicConectivity qf;
 
 	private int p;
 	private int q;
