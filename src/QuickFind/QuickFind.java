@@ -1,3 +1,4 @@
+package QuickFind;
 
 public class QuickFind {
 	/*
@@ -44,6 +45,7 @@ public class QuickFind {
 	}
 
 	public void union(int p, int q) {
+ 
 		int qId = this.id[q];
 		
 		for (int i = 0; i < this.id.length; i++){			

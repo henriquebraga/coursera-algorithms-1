@@ -1,3 +1,4 @@
+package QuickFind;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
@@ -47,7 +48,7 @@ public class TestQuickFind extends TestCase {
 		// 0 1 2 3 4 5 6 7 8 9 initial state
 		// 0 1 2 3 3 5 6 7 8 9 union(3, 4)
 		// 0 0 2 3 3 5 6 7 8 9 union(0, 1)
-		// 0 0 2 0 0 5 6 7 8 9 union(1, 3): should union elements containing id 3
+		// 0 0 2 0 0 5 6 7 8 9 union(1, 3): should union elements containing id 3.
 		
 		this.qf.union(3, 4);
 		this.qf.union(0, 1);
