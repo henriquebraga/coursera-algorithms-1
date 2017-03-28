@@ -1,6 +1,6 @@
 package QuickFind;
 
-public class QuickFind {
+public class QuickFind extends DynamicConectivity{
 	/*
 	 * Quick Find: Eager approach
 	 * Data Strucutre.
@@ -30,7 +30,6 @@ public class QuickFind {
 	 * 8    8
 	 * 9    8
 	 */
-	int id[];
 	
 	public QuickFind(int size){
 		id = new int[size];	
