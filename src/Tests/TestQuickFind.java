@@ -1,8 +1,10 @@
-package QuickFind;
+package Tests;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import QuickFind.DynamicConectivity;
+import QuickFind.QuickFind;
 import junit.framework.TestCase;
 public class TestQuickFind extends TestCase {
 	
