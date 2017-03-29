@@ -32,11 +32,8 @@ public class QuickFind extends DynamicConectivity{
 	 */
 	
 	public QuickFind(int size){
-		id = new int[size];	
-		
-		for(int i = 0; i < id.length; i++){
-			id[i] = i;
-		}
+		super(size);
+
 	}
 
 	public boolean areConnected(int p, int q) {
