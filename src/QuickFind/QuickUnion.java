@@ -26,19 +26,20 @@ public class QuickUnion extends DynamicConectivity {
 		int rootQ = this.getRoot(q);
 		this.id[rootP] = rootQ;
 	}
-	
-	private int getRoot(int i)
+
+
+	protected int getRoot(int i)
 	/**
 	 * Chase parent pointers until reach root(depth
 	 * of i array accesses)
 	 */
 	{
-		while (i != id[i]){
-			i = id[i];
-		} 
-		
-		return i;
-		
+
+		if (i != id[i]){
+			return getRoot(id[i]);
+		} else {
+			return i;
+		}
 	}
 
 }
