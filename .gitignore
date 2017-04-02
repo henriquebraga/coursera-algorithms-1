@@ -49,6 +49,9 @@ local.properties
 # Code Recommenders
 .recommenders/
 
+#IntelliJ
+.idea/
+*.iml
 # Scala IDE specific (Scala & Java development for Eclipse)
 .cache-main
 .scala_dependencies
