@@ -10,6 +10,7 @@ public class TestQuickUnion extends TestCase {
 	private DynamicConectivity quickUnion;
 	int p;
 	int q;
+
 	@Override
 	protected void setUp() throws Exception {
 		this.p = 2;

@@ -6,6 +6,7 @@ import org.junit.Test;
 import QuickFind.DynamicConectivity;
 import QuickFind.QuickFind;
 import junit.framework.TestCase;
+
 public class TestQuickFind extends TestCase {
 	
 	private DynamicConectivity quickFind;
@@ -20,14 +21,12 @@ public class TestQuickFind extends TestCase {
 		this.quickFind = new QuickFind(10);
 	}
 	
-	@Test
-	public void test_afterCreatingQuickFindShouldHaveTenSizeArray() 
+	public void test_afterCreatingQuickFindShouldHaveTenSizeArray()
 	{
 		assertEquals(this.quickFind.id.length, 10);	
 	}
 	
-	@Test
-	public void test_WhenCreatesPositionsShouldHaveTheSameValueFromIndex()
+	public void test_WhenCreatePositionsShouldHaveTheSameValueFromIndex()
 	{
 		int expectedIds[] = new int[10];
 		
@@ -38,19 +37,16 @@ public class TestQuickFind extends TestCase {
 		assertArrayEquals(expectedIds, this.quickFind.id);
 	}
 	
-	@Test
 	public void test_PandQshouldNotBeConnected()
 	{
 		assertFalse(this.quickFind.areConnected(this.p, q));
 	}
 	
-	@Test
 	public void test_AfterUnionComponentsShouldHaveSameIds(){
 		this.quickFind.union(p, q);
 		assertEquals(this.quickFind.id[p], this.quickFind.id[q]);
 	}
 	
-	@Test
 	public void test_ShouldUnionTwoComponents()/**
 	* Here are the steps executed for this test:
 	* 
@@ -61,7 +57,6 @@ public class TestQuickFind extends TestCase {
       */
 	
 	{
-	
 		this.quickFind.union(3, 4);
 		this.quickFind.union(0, 1);
 		this.quickFind.union(1, 3);		
